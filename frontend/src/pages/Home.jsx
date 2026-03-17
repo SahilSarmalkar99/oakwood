@@ -7,7 +7,7 @@ import Production from '../components/Home/Production'
 import ScatterLayout from '../components/Home/ScatterLayout'
 import ProductSection from '../components/Home/ProductSection'
 import WhiteLabelSection from '../components/Home/WhiteLabelSection'
-import BestProduct from './BestProduct'
+import BestProduct from '../components/Home/BestProduct'
 import Footer from '../components/Footer'
 
 const Home = () => {

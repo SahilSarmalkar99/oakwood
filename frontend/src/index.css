@@ -45,3 +45,7 @@
   font-family: "f9";
   src: url("./assets/fonts/font9.woff2") format("woff2");
 }
+
+html, body {
+  scroll-behavior: auto;
+}

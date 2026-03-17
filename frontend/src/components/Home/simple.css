@@ -1,0 +1,80 @@
+.carousel-simple{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    gap: 2rem;
+}
+
+.group-simple{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    animation: scroll 40s linear infinite;
+}
+
+.group-reverse-simple{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    animation: scroll 40s linear infinite;
+    animation-direction: reverse;
+}
+
+.card-simple{
+    flex: 0 0 auto;
+    width: 500px;
+    height: 360px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+/* Image */
+.card-simple img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display: block;
+}
+
+/* 🔥 RESPONSIVE BREAKPOINTS */
+
+/* Tablets */
+@media (max-width: 1024px){
+    .card-simple{
+        width: 380px;
+        height: 280px;
+    }
+}
+
+/* Large phones */
+@media (max-width: 768px){
+    .card-simple{
+        width: 280px;
+        height: 200px;
+    }
+
+    .group-simple,
+    .group-reverse-simple{
+        gap: 1.5rem;
+        animation-duration: 30s; /* slightly faster for smaller screens */
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px){
+    .card-simple{
+        width: 220px;
+        height: 160px;
+    }
+
+    .group-simple,
+    .group-reverse-simple{
+        gap: 1rem;
+        animation-duration: 25s;
+    }
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-100%); }
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import Carousel from './Carousel'
 
 const BestProduct = () => {
   return (
@@ -12,10 +13,9 @@ const BestProduct = () => {
     </h1>
   </div>
 
-  {/* ✅ ADD YOUR CAROUSEL HERE */}
+  
   <div className="w-full">
-    {/* Your carousel component OR GSAP scroll slider */}
-    <h1>Carousel</h1>
+    <Carousel />
   </div>
 
 </section>
