@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Journel from "./pages/Journel";
 import { Routes, Route } from "react-router-dom";
 import FullscreenMenu from "./components/Navbar";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 
 const App = () => {
 
